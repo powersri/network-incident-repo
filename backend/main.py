@@ -19,10 +19,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        # Update these origins to match your frontend development URLs
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://network-incident-repo.onrender-ui.com/",
+        "https://network-incident-repo-ui.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
